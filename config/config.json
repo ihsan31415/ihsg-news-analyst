@@ -1,0 +1,20 @@
+{
+  "input_features": [
+    "relv_judul", "relv_isi",
+    "judul_logits_0", "judul_logits_1", "judul_logits_2",
+    "isi_logits_0", "isi_logits_1", "isi_logits_2",
+    "month_percentage", "year_percentage",
+    "is_holiday", "is_weekend", "is_trading_day",
+    "day_of_week_sin", "day_of_week_cos",
+    "month_sin", "month_cos",
+    "year_quarter_sin", "year_quarter_cos",
+    "month_quarter_sin", "month_quarter_cos",
+    "horizon_embed_0", "horizon_embed_1", "horizon_embed_2", "horizon_embed_3"
+  ],
+  "output_target": "price_change_target",
+  "scaler_x_path": "data/scalers/scaler_x.pkl",
+  "scaler_y_path": "data/scalers/scaler_y.pkl",
+  "model_path": "models/best_model.pth",
+  "hidden_layers": [1024, 896, 768, 640, 512, 384, 384, 256, 256, 256, 192, 192, 128, 96, 64, 32, 16, 8],
+  "dropout": 0.1
+}
